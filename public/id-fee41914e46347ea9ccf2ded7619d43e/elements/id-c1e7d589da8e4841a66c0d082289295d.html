@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Schaden bearbeiten</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.4.1.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Schaden bearbeiten</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-BusinessProcess"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-BusinessProcess" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+                    <!-- Analysis -->
+                    	<li role="presentation"><a href="#analysis" aria-controls="analysis" role="tab" data-toggle="tab" class="i18n-analysis"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Je nach Komplexit&#228;t erfolgt eine Pr&#252;fung der Police und ggf. eine Schadenbewertung.</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="analysis">
+						<table class="table table-striped table-hover table-condensed" id="used-in-views">
+							<thead>
+								<tr><th colspan="2" class="i18n-used-in-views" /></tr>
+								<tr>
+									<th class="i18n-name"></th>
+									<th class="i18n-viewpoint"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr id="used-in-views-id-eceb2a72e82e4f0fb7166a37fc42e11a">
+																	<td><a href="../views/id-eceb2a72e82e4f0fb7166a37fc42e11a.html" target="view" title="SchadenmanagementsystemErweiterung"> SchadenmanagementsystemErweiterung </a></td>
+																	<td><span class="i18n-viewpoint-" /></td>
+																</tr><tr id="used-in-views-id-db05bce7317e4d22afe63b65ad17c768">
+																	<td><a href="../views/id-db05bce7317e4d22afe63b65ad17c768.html" target="view" title="B4 - Prozess Schadenabwicklung"> B4 - Prozess Schadenabwicklung </a></td>
+																	<td><span class="i18n-viewpoint-" /></td>
+																</tr><tr id="used-in-views-id-0996e912db494fd18faa4cb102a9848e">
+																	<td><a href="../views/id-0996e912db494fd18faa4cb102a9848e.html" target="view" title="B4-C1 - Schaden regulieren"> B4-C1 - Schaden regulieren </a></td>
+																	<td><span class="i18n-viewpoint-" /></td>
+																</tr>
+							</tbody>
+						</table>
+						<table class="table table-striped table-hover table-condensed" id="model-relations">
+							<thead>
+								<tr><th colspan="4" class="i18n-model-relations" /></tr>
+								<tr>
+									<th class="i18n-name"></th>
+									<th class="i18n-type"></th>
+									<th class="i18n-source"></th>
+									<th class="i18n-target"></th>
+								</tr>
+							</thead>
+							<tbody>
+									<tr>
+											<td><a href="../elements/id-06dd076364664201b60a47ab9394e000.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-TriggeringRelationship" /></td>
+											<td><a href="../elements/id-c1e7d589da8e4841a66c0d082289295d.html" target="element"> Schaden bearbeiten</a></td>
+											<td><a href="../elements/id-a69cb751ecf6482f912954c95ff7caba.html" target="element"> Junction</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-d142c1276ed340d8b3100b0dac1647e0.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-RealizationRelationship" /></td>
+											<td><a href="../elements/id-c1e7d589da8e4841a66c0d082289295d.html" target="element"> Schaden bearbeiten</a></td>
+											<td><a href="../elements/id-da39d90ee2a04db9ba1d8cea334c31dd.html" target="element"> Schadenaufnahme</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-aa1eea8c73a44b499b0eab03dca1fb80.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-RealizationRelationship" /></td>
+											<td><a href="../elements/id-c1e7d589da8e4841a66c0d082289295d.html" target="element"> Schaden bearbeiten</a></td>
+											<td><a href="../elements/id-b920cdb9e963484f9de5ece1c93c2cb5.html" target="element"> Schadenbearbeitung</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-564db102d7894066b9d4af50449a960e.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-RealizationRelationship" /></td>
+											<td><a href="../elements/id-c1e7d589da8e4841a66c0d082289295d.html" target="element"> Schaden bearbeiten</a></td>
+											<td><a href="../elements/id-50bbe4691ee84e218fd474501efbf0a7.html" target="element"> Schadenauszahlung</a></td>
+										</tr>
+									<tr>
+											<td><a href="../elements/id-d05d17fc7c924dd382e529a037a8061b.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AggregationRelationship" /></td>
+											<td><a href="../elements/id-0889238172eb4f7b8bd70cdab29bb14f.html" target="element"> Schadenabwicklung</a></td>
+											<td><a href="../elements/id-c1e7d589da8e4841a66c0d082289295d.html" target="element"> Schaden bearbeiten</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-acb9dd7582a248d6add3cbc811fab93c.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AssignmentRelationship" /></td>
+											<td><a href="../elements/id-0ce1e902f15b4c49a06bb89182873562.html" target="element"> Schadenbearbeitungsabteilung</a></td>
+											<td><a href="../elements/id-c1e7d589da8e4841a66c0d082289295d.html" target="element"> Schaden bearbeiten</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-d7929a48f32f42b6bc710fd1cd5ee1eb.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-TriggeringRelationship" /></td>
+											<td><a href="../elements/id-3a571b70c8e246cc87feeba66a9b9858.html" target="element"> Junction</a></td>
+											<td><a href="../elements/id-c1e7d589da8e4841a66c0d082289295d.html" target="element"> Schaden bearbeiten</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-661722043c5f481d9c4a3c8f7b059f5e.html" target="element" title="serves">serves</a></td>
+											<td><span class="i18n-elementtype-ServingRelationship" /></td>
+											<td><a href="../elements/id-01b9bbeaa1ed48b2b76eff17a8417242.html" target="element"> Schadenabwicklung</a></td>
+											<td><a href="../elements/id-c1e7d589da8e4841a66c0d082289295d.html" target="element"> Schaden bearbeiten</a></td>
+										</tr>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
